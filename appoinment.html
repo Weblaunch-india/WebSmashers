@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="HOME.CSS">
+   
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="div-of-nav">
+        <nav class="navs1 navbar-fixed-top">
+          <div class="new-navs1">
+            <a href="INDEX2.HTML"></a>
+            <h2 class="span1 logo12"><a href="Home.HTML ">Medicon</a></h2>
+          </div>
+          <div class="navhide">
+            <ul class="ul-nav1">
+              <li class="li1"><button class="navbtn"><a href="HOME.HTML" class="ul-content1">Home</a></button></li>
+              <li class="li1"><button class="navbtn"><a href="aboutus.html" class="ul-content1">About Us</a></button></li>
+              <li class="li1"><button class="navbtn"><a href="contactus.html" class="ul-content1">Contact Us</a></button></li>
+              <button class="button1"><span><a class="nav-donate"
+                href="appoinment.html">Book an Appoinment</a></span></button>
+                <button class="button1"><span><a class="nav-donate"
+                  href="index.html">Login</a></span></button>
+             
+            </ul>
+          </div>
+    
+         
+    
+          <img onclick="show_hide()" src="imagesburger.png" alt="hamburger" class="nav-hamburger">
+        </nav>
+      </div> 
+
+      <div class="inner-layer">
+        <div class="container">
+          <div class="row no-margin">
+              <div class="col-sm-7">
+                  <div class="content">
+                      <h1 class="titletext">Book You Slot Now and Save your time</h1>
+                      <h2>For Help Call : +91xxxxxxxxxx</h2>
+                      <h2>Timings:9:00am to 6:00pm</h2>
+
+                  </div>
+              </div>
+              <div class="col-sm-5">
+                  <div class="form-data">
+                      <div class="form-head">
+                          <h2 align="center">Book Appointemnt</h2>
+                      </div>
+                      <form action="">
+                        <div class="form-body">
+                            <div class="row form-row">
+                              <input type="text" placeholder="Enter Full name" required class="form-control">
+                            </div>
+                            <div class="row form-row">
+                              <input type="text" placeholder="Enter Mobile Number" required class="form-control">
+                            </div>
+                             <div class="row form-row">
+                              <input type="text" placeholder="Enter Email Adreess" required class="form-control">
+                            </div>
+                           <div class="row form-row">
+                              <input id="dat" type="date" placeholder="Appointment Date" required class="form-control">
+                            </div>
+                            
+                            <h6>Address Details</h6>
+  
+                             <div class="row form-row">
+                                <div class="col-sm-6">
+                                   <input type="text" placeholder="Enter Area" required class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                   <input type="text" placeholder="Enter City" class="form-control">
+                                </div>
+                            </div>
+                             <div class="row form-row">
+                                <div class="col-sm-6">
+                                   <input type="text" placeholder="Enter State" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                   <input type="text" placeholder="Postal Code" required class="form-control">
+                                </div>
+                            </div>
+  
+                             <div class="row form-row">
+                                <button class="button2"><span><a class="nav-donate"
+                                    href="appoinment.html">Book an Appoinment</a></span></button>
+                                   
+                            </div>
+  
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+
+
+
+
+  
+
+ 
+  <script>
+    $(".carouselslid").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1, nav: false },
+        600: { items: 2, nav: false },
+        1000: { items: 3, nav: false },
+      },
+    });
+  </script>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 120,
+        duration: 1000,
+        once: false,
+        mirror: false
+      }
+    );
+  </script>
+
+  <script src="navbar.js">
+    
+  </script>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $("#dat").datepicker();
+  })
+</script>
+<!--number scroller js-->
+  <script>
+    let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue +=1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+  </script>
+
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <div class="underline"></div>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menu Navigation</h4>
+        <div class="underline"></div>
+        <ul>
+          <li><a href="index2.css">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="index.html">Login</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="underline"></div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+</html>

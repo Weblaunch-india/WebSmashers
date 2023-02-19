@@ -501,6 +501,9 @@ ul {
     {
         font-family:serif;
     }
+    .navs1 {
+        height: 8vh;
+    }
 
     .second-cont-card-img {
         width: 100%;
@@ -521,6 +524,9 @@ ul {
     *
     {
         font-family:serif;
+    }
+    .navs1 {
+        height: 8vh;
     }
 
     .bdy1 {
@@ -554,6 +560,9 @@ ul {
     *
     {
         font-family:serif;
+    }
+    .navs1 {
+        height: 8vh;
     }
 
     .bdy1 {
@@ -642,6 +651,9 @@ ul {
     margin: 10px;
     margin-top: 1px;
 }
+.navs1 {
+    height: 8vh;
+}
 *
     {
         font-family:serif;
@@ -674,6 +686,9 @@ ul {
     flex-direction: column;
     margin: 10px;
     margin-top: 10px;
+}
+.navs1 {
+    height: 8vh;
 }
 .con1-img
 {

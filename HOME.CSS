@@ -835,7 +835,7 @@ ul {
     }
     .bdy2
   {
-    height: 130vh;
+    height: 140vh;
   }
   
     .numcontainer {
@@ -844,3 +844,39 @@ ul {
       font-size: 14px;
     }
   }
+
+  @media screen and (max-width : 430px)
+{
+
+    .bdy2 {
+        height: 135vh;
+    }
+}
+@media screen and (max-width : 360px)
+{
+
+    .bdy2 {
+        height: 115vh;
+    }
+}
+@media screen and (max-width : 340px)
+{
+
+    .bdy2 {
+        height: 113vh;
+    }
+}
+@media screen and (max-width : 320px)
+{
+
+    .bdy2 {
+        height: 110vh;
+    }
+}
+@media screen and (max-width : 300px)
+{
+
+    .bdy2 {
+        height: 100vh;
+    }
+}
